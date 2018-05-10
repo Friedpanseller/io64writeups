@@ -6,6 +6,7 @@ binary | symbolic solver | Multiplication | overflow | maths
 We want *a[1] * 0x1064deadbeef4601u to equal 0xd1038d2e07b42569u
 
 Since 0xd1038d2e07b42569u / 0x1064deadbeef4601u is a decimal, we have to try multiplying it by something that will still let it equal itself after overflow section is cut off
+```
 
                 1064DEADBEEF4601 * 
                 ----------------
@@ -85,7 +86,7 @@ Since 0xd1038d2e07b42569u / 0x1064deadbeef4601u is a decimal, we have to try mul
                 7373617034366F69
 -764B3957CAB7CEFD1038D2E07B42569
 ----------------d1038d2e07b42569
-
+```
 therefore the good payload is 7373617034366F69 which is "io64pass"
 ## Flag
 X4DafQbnaTY5hiXe
